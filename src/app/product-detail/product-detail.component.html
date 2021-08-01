@@ -1,0 +1,10 @@
+<div>
+    <img [src]="productFromService.image" alt="">
+</div>
+<div>
+    <ul>
+        <li>Nombre: {{ productFromService.title}}</li>
+        <li>Precio: {{ productFromService.price | currency}}</li>
+    </ul>
+    <p>{{ productFromService.description }}</p>
+</div>
