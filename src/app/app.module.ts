@@ -5,16 +5,36 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductComponent } from './components/product.component';
+import { CartComponent } from './cart/cart.component';
+import { ExponentialPipe } from './exponential.pipe';
+import { HomeComponent } from './home/home.component';
+import { ProductsComponent } from './products/products.component';
+import { ContactComponent } from './contact/contact.component';
+import { TestComponent } from './test/test.component';
+import { HeaderComponent } from './header/header.component';
+import { BannerComponent } from './banner/banner.component';
+import { FooterComponent } from './footer/footer.component';
+import { SwiperModule} from 'swiper/angular';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent
+    ProductComponent,
+    CartComponent,
+    ExponentialPipe,
+    HomeComponent,
+    ProductsComponent,
+    ContactComponent,
+    TestComponent,
+    HeaderComponent,
+    BannerComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

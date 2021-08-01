@@ -18,7 +18,9 @@
     "@angular/platform-browser": "~12.1.0",
     "@angular/platform-browser-dynamic": "~12.1.0",
     "@angular/router": "~12.1.0",
+    "express": "^4.17.1",
     "rxjs": "~6.6.0",
+    "swiper": "^6.8.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },
@@ -35,5 +37,18 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.3.2"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaladinMaple/AngularStore.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaladinMaple/AngularStore/issues"
+  },
+  "homepage": "https://github.com/PaladinMaple/AngularStore#readme",
+  "keywords": []
 }
