@@ -1,2 +1,25 @@
 <input type="text" [(ngModel)]="title">
 {{ title }}
+
+<div *ngIf="title === 'Damon'">
+    Damon Albarn 
+</div>
+
+<div [ngSwitch]="title">
+    <p *ngSwitchCase="'mariano'">Hola, soy Mariano</p>
+    <p *ngSwitchCase="'jeremy'">Hola, soy Jeremy</p>
+    <p *ngSwitchCase="'juan carlos'">Hola, soy Juan Carlos</p>
+</div>
+
+<button (click)="addItem()">Add item</button>
+<ul>
+    <li *ngIf="items.length === 0">Lista vacía</li>
+    <li *ngFor="let name of items; index as i">
+        {{ name }} {{ i }}
+        <button (click)="deleteItem(i)">delete</button>
+    </li>
+</ul>
+
+<div *ngFor="let product of products">
+    <app-product (productClicked)="clickProduct($event)" [product]="product"></app-product>
+</div>
